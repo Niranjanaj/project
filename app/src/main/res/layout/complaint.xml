@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/complaint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#fa0740"
+    tools:context="com.example.niranjan.app.ComplaintActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:text="WELCOME"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:textSize="40dp"
+        android:id="@+id/textView2" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="28dp"
+        android:id="@+id/button2"
+        android:textColor="#ffffff"
+        android:background="@android:drawable/toast_frame"
+        android:text="MAKE A COMPLAINT"
+        android:onClick="Next"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="28dp"
+        android:id="@+id/button5"
+        android:onClick="Viewing"
+        android:textColor="#ffffff"
+        android:background="@android:drawable/toast_frame"
+        android:text="MY COMPLAINTs" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="28dp"
+        android:id="@+id/button6"
+        android:textColor="#ffffff"
+        android:background="@android:drawable/toast_frame"
+        android:text="AREA HISTORY" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signout"
+        android:textColor="#080808"
+        android:textSize="20dp"
+        android:text="@string/sign"
+        android:layout_gravity="bottom|right"
+        android:background="@android:drawable/arrow_up_float"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="70dp"
+        android:onClick="Reload"/>
+
+</LinearLayout>

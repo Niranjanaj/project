@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -46,7 +42,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
-        android:hint="Username"
+        android:hint="user_name"
         android:id="@+id/editText" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
@@ -59,34 +55,8 @@
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:hint="Phone number"
+        android:hint="phone number"
         android:id="@+id/editText1" />
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="300dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:hint="Password"
-            android:id="@+id/editText7" />
-    </android.support.design.widget.TextInputLayout>
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="300dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:ems="10"
-            android:hint="Confirm Password"
-            android:id="@+id/editText8" />
     </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -98,7 +68,7 @@
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:hint="Email"
+        android:hint="email"
         android:id="@+id/editText2" />
     </android.support.design.widget.TextInputLayout>
 
@@ -108,27 +78,6 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:id="@+id/spinner" />
-    <TextView
-        android:text="OR"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:layout_marginLeft="140dp"
-        android:textColor="@color/colorPrimary"
-        android:id="@+id/textView2" />
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <EditText
-        android:layout_width="300dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:ems="10"
-        android:hint="Please specify the area"
-        android:id="@+id/editText6" />
-    </android.support.design.widget.TextInputLayout>
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -139,7 +88,7 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:hint="Age"
+        android:hint="age"
         android:id="@+id/editText3" />
     </android.support.design.widget.TextInputLayout>
 
@@ -152,5 +101,4 @@
 
 
 </LinearLayout>
-    </ScrollView>
 
