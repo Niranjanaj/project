@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bell"
+            android:icon="@drawable/ic_add_alert_black_48dp"
+            android:title="Make Complaint" />
+        <item
+            android:id="@+id/nav_perse"
+            android:icon="@drawable/ic_person_black_48dp"
+            android:title="My Complaints" />
+        <item
+            android:id="@+id/nav_loc"
+            android:icon="@drawable/ic_pin_drop_black_48dp"
+            android:title="Area History" />
+        <item
+            android:id="@+id/nav_status"
+            android:icon="@drawable/ic_poll_black_48dp"
+            android:title="Status" />
+    </group>
+
+    <item android:title="Signing">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_undo_black_48dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>
