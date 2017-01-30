@@ -16,13 +16,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class CombinedActivity extends AppCompatActivity
+public class Combinedofficial extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_combined);
+        setContentView(R.layout.activity_combinedofficial);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -30,7 +30,6 @@ public class CombinedActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         displaySelectedScreen(R.id.nav_bell);
@@ -82,23 +81,20 @@ public class CombinedActivity extends AppCompatActivity
 
         //initializing the fragment object which is selected
         switch (itemId) {
-            case R.id.nav_bell:
-                fragment = new Menu1();
+            case R.id.nav_tday:
+                fragment = new Today();
                 break;
-            case R.id.nav_perse:
-                fragment = new Menu2();
+            case R.id.nav_process:
+                fragment = new Process();
                 break;
-            case R.id.nav_loc:
+            case R.id.nav_ss:
+                fragment = new Finished();
+                break;
+            case R.id.nav_man:
                 fragment = new Menu3();
                 break;
-            case R.id.nav_status:
-                fragment = new Menu4();
-                break;
-            case R.id.nav_off:
-                fragment = new Complaintofficial();
-                break;
             case R.id.nav_signout:
-                Intent i = new Intent(CombinedActivity.this,MainActivity.class);
+                Intent i = new Intent(Combinedofficial.this,OfficialActivity.class);
                 startActivity(i);
                 break;
         }

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tday"
+            android:title="Todays Complaints" />
+        <item
+            android:id="@+id/nav_process"
+            android:title="Processed complaints" />
+        <item
+            android:id="@+id/nav_ss"
+            android:title="Completed complaints" />
+        <item
+            android:id="@+id/nav_man"
+            android:title="Area history" />
+    </group>
+
+    <item android:title="Signing">
+        <menu>
+            <item
+                android:id="@+id/nav_signout"
+                android:icon="@drawable/ic_undo_black_48dp"
+                android:title="Sign Out" />
+        </menu>
+    </item>
+
+</menu>

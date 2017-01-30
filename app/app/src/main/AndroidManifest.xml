@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.niranjan.app">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/complaints1"
@@ -24,6 +26,24 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.niranjan.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".OfficialActivity"
+            android:label="@string/title_activity_official"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.niranjan.app.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Combinedofficial"
+            android:label="@string/title_activity_combinedofficial"
+            android:parentActivityName=".OfficialActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.niranjan.app.OfficialActivity" />
         </activity>
     </application>
 
